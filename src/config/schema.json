@@ -1,9 +1,9 @@
 {
   "info": {
     "logo": "screenshot.png",
-    "header": "Bold Theme",
+    "header": "Gourmet Theme",
     "content": [
-      "Tema 'Bold' de Shoperti. Por favor contáctanos por cualquier problema con este tema a [contacto](mailto:themes-support@shoperti.com)."
+      "Tema 'Gourmet' de Shoperti. Por favor contáctanos por cualquier problema con este tema a [contacto](mailto:themes-support@shoperti.com)."
     ]
   },
   "categories": [
@@ -18,7 +18,7 @@
               "type": "color",
               "id": "brand_main_color",
               "label": "Color destacado",
-              "default": "#ff7e11",
+              "default": "#f15a29",
               "info": "Usualmente es el color principal de la marca."
             },
             {
@@ -30,39 +30,60 @@
           ]
         },
         {
-          "header": "Menú Sidebar",
+          "header": "Banner Superior",
           "settings": [
             {
               "type": "color",
-              "id": "sidebar_menu_bg_gradient_color_one",
-              "label": "Degradado inicial",
-              "default": "#ff7e11",
-              "info": "Si quieres un color sólido usa el mismo color del degradado final."
+              "id": "navbanner_bg",
+              "label": "Fondo",
+              "default": "rgba(0,0,0,.8)"
             },
             {
               "type": "color",
-              "id": "sidebar_menu_bg_gradient_color_two",
-              "label": "Degradado final",
-              "default": "#ee1919",
-              "info": "Si quieres un color sólido usa el mismo color del degradado inicial."
+              "id": "navbanner_bg",
+              "label": "Fondo al desplazar",
+              "default": "#F19729"
             },
             {
               "type": "color",
-              "id": "sidebar_menu_text_color",
-              "label": "textos",
+              "id": "navbanner_text",
+              "label": "Texto",
               "default": "#ffffff"
+            }
+          ]
+        },
+        {
+          "header": "Navegación",
+          "settings": [
+            {
+              "type": "color",
+              "id": "nav_menu_bg",
+              "label": "Fondo",
+              "default": "rgba(255,255,255,.85)"
             },
             {
               "type": "color",
-              "id": "sidebar_menu_links_color",
+              "id": "nav_menu_scrolled_bg",
+              "label": "Fondo desplazado",
+              "default": "rgba(255,255,255,1)"
+            },
+            {
+              "type": "color",
+              "id": "nav_mobile_menu_bg",
+              "label": "Fondo en móviles",
+              "default": "#dcdcdc"
+            },
+            {
+              "type": "color",
+              "id": "nav_link_text_color",
               "label": "Vínculos y textos",
-              "default": "#ffffff"
+              "default": "#666666"
             },
             {
               "type": "color",
-              "id": "sidebar_menu_links_color_hover",
+              "id": "nav_link_text_hover_color",
               "label": "Sobre vínculos",
-              "default": "#417f94"
+              "default": "#F19729"
             }
           ]
         },
@@ -73,7 +94,7 @@
               "type": "color",
               "id": "headings_color",
               "label": "Títulos",
-              "default": "#000000"
+              "default": "#555555"
             },
             {
               "type": "color",
@@ -86,19 +107,19 @@
               "type": "color",
               "id": "body_font_color",
               "label": "Contenidos",
-              "default": "#515151"
+              "default": "#555555"
             },
             {
               "type": "color",
               "id": "main_link_color",
               "label": "Vínculos",
-              "default": "#43547e"
+              "default": "#F19729"
             },
             {
               "type": "color",
-              "id": "main_link_color_hover",
+              "id": "main_link_hover_color",
               "label": "Sobre vínculos",
-              "default": "#417f94"
+              "default": "#FF1E00"
             }
           ]
         },
@@ -115,7 +136,7 @@
               "type": "color",
               "id": "btn_bg_color",
               "label": "Fondo",
-              "default": "#43547e"
+              "default": "#f15a29"
             },
             {
               "type": "color",
@@ -127,7 +148,7 @@
               "type": "color",
               "id": "btn_bg_color_hover",
               "label": "Fondo con mouse encima",
-              "default": "#417f94"
+              "default": "#FF1E00"
             }
           ]
         },
@@ -138,225 +159,123 @@
               "type": "color",
               "id": "slide_bg_color",
               "label": "Fondo del slider",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "slide_bg_color",
+              "label": "Título",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "slide_subtitle_color",
+              "label": "Subtítulo",
+              "default": "rgb(238,232,170)"
+            },
+            {
+              "type": "color",
+              "id": "slide_btn_text_color",
+              "label": "Texto del botón",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "slide_btn_bg_color",
+              "label": "Fondo del botón",
+              "default": "#f15a29"
+            },
+            {
+              "type": "color",
+              "id": "slide_btn_text_color_hover",
+              "label": "Texto del botón con mouse encima",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "slide_btn_bg_color_hover",
+              "label": "Fondo del botón con mouse encima",
+              "default": "#FF1E00"
+            }
+          ]
+        },
+        {
+          "header": "Promos",
+          "settings": [
+            {
+              "type": "color",
+              "id": "promo_home_color_title",
+              "label": "Títulos",
+              "default": "#f15a29"
+            },
+            {
+              "type": "color",
+              "id": "promo_home_color_desc",
+              "label": "Descripción",
+              "default": "#666666"
+            },
+            {
+              "type": "color",
+              "id": "promo_home_color_icon",
+              "label": "Ícono",
+              "default": "#f15a29"
+            }
+          ]
+        },
+        {
+          "header": "Menú en sidebar",
+          "settings": [
+            {
+              "type": "color",
+              "id": "sidebar_bg_color",
+              "label": "Fondo",
+              "default": "rgba(255,255,255,0)"
+            },
+            {
+              "type": "color",
+              "id": "sidebar_lines_color",
+              "label": "Pleca lateral",
               "default": "#eeeeee"
             },
             {
               "type": "color",
-              "id": "slider_nav_bg_color",
-              "label": "Fondo de la navegación del slider",
-              "default": "#efefef"
+              "id": "sidebar_titles_color",
+              "label": "Títulos",
+              "default": "#555555"
+            },
+            {
+              "type": "color",
+              "id": "sidebar_texts_color",
+              "label": "Enlaces",
+              "default": "#555555"
             }
           ]
         },
         {
-          "header": "Slide 1",
+          "header": "Banner estático",
           "settings": [
             {
               "type": "color",
-              "id": "slide_1_title_color",
-              "label": "Título",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_description_color",
-              "label": "Descripción",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_btn_text_color",
-              "label": "Texto del botón",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_btn_bg_color",
-              "label": "Fondo del botón",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_btn_text_hover_color",
-              "label": "Texto del botón con mouse encima",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_btn_bg_hover_color",
-              "label": "Fondo del botón con mouse encima",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_brand_logo",
-              "label": "Marca inactiva en navegación",
-              "default": "#999999"
-            },
-            {
-              "type": "color",
-              "id": "slide_1_brand_logo_active",
-              "label": "Marca activa en navegación",
-              "default": "#ff7e11"
+              "id": "featured_static_banner_bg_color",
+              "label": "Fondo",
+              "default": "rgba(255,255,255,0)"
             }
           ]
         },
         {
-          "header": "Slide 2",
+          "header": "Banners parallax",
           "settings": [
             {
               "type": "color",
-              "id": "slide_2_title_color",
+              "id": "featured_banner_home_title_color",
               "label": "Título",
-              "default": "#FFFFFF"
+              "default": "rgba(255,255,255,0)"
             },
             {
               "type": "color",
-              "id": "slide_2_description_color",
-              "label": "Descripción",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_btn_text_color",
-              "label": "Texto del botón",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_btn_bg_color",
-              "label": "Fondo del botón",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_btn_text_hover_color",
-              "label": "Texto del botón con mouse encima",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_btn_bg_hover_color",
-              "label": "Fondo del botón con mouse encima",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_brand_logo",
-              "label": "Marca inactiva en navegación",
-              "default": "#999999"
-            },
-            {
-              "type": "color",
-              "id": "slide_2_brand_logo_active",
-              "label": "Marca activa en navegación",
-              "default": "#ff7e11"
-            }
-          ]
-        },
-        {
-          "header": "Slide 3",
-          "settings": [
-            {
-              "type": "color",
-              "id": "slide_3_title_color",
+              "id": "featured_banner_home_second_title_color",
               "label": "Título",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_description_color",
-              "label": "Descripción",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_btn_text_color",
-              "label": "Texto del botón",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_btn_bg_color",
-              "label": "Fondo del botón",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_btn_text_hover_color",
-              "label": "Texto del botón con mouse encima",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_btn_bg_hover_color",
-              "label": "Fondo del botón con mouse encima",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_brand_logo",
-              "label": "Marca inactiva en navegación",
-              "default": "#999999"
-            },
-            {
-              "type": "color",
-              "id": "slide_3_brand_logo_active",
-              "label": "Marca activa en navegación",
-              "default": "#ff7e11"
-            }
-          ]
-        },
-        {
-          "header": "Slide 4",
-          "settings": [
-            {
-              "type": "color",
-              "id": "slide_4_title_color",
-              "label": "Título",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_description_color",
-              "label": "Descripción",
-              "default": "#FFFFFF"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_btn_text_color",
-              "label": "Texto del botón",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_btn_bg_color",
-              "label": "Fondo del botón",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_btn_text_hover_color",
-              "label": "Texto del botón con mouse encima",
-              "default": "#ea1c33"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_btn_bg_hover_color",
-              "label": "Fondo del botón con mouse encima",
-              "default": "#ffffff"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_brand_logo",
-              "label": "Marca inactiva en navegación",
-              "default": "#999999"
-            },
-            {
-              "type": "color",
-              "id": "slide_4_brand_logo_active",
-              "label": "Marca activa en navegación",
-              "default": "#ff7e11"
+              "default": "rgba(255,255,255,0)"
             }
           ]
         },
@@ -365,27 +284,62 @@
           "settings": [
             {
               "type": "color",
-              "id": "product_card_bottom_bar_color",
-              "label": "Pleca inferior",
-              "default": "#cccccc"
-            },
-            {
-              "type": "color",
-              "id": "product_card_bottom_bar_color_hover",
-              "label": "Pleca inferior con mouse encima",
-              "default": "#ff7e11"
-            },
-            {
-              "type": "color",
-              "id": "product_card_background_color",
-              "label": "Fondo de producto",
+              "id": "product_background_card",
+              "label": "Fondo producto inferior",
               "default": "rgba(255,255,255,0)"
+            },
+            {
+              "type": "color",
+              "id": "product_ribbon_bg",
+              "label": "Cinta del producto",
+              "default": "#00a0c6"
             },
             {
               "type": "color",
               "id": "product_compared_price_color",
               "label": "Color precio comparativo",
               "default": "#f44336"
+            }
+          ]
+        },
+        {
+          "header": "Pie de página",
+          "settings": [
+            {
+              "type": "color",
+              "id": "footer_bg_color",
+              "label": "Títulos",
+              "default": "#F2F2F2"
+            },
+            {
+              "type": "color",
+              "id": "footer_title_color",
+              "label": "Fondo",
+              "default": "f15a29"
+            },
+            {
+              "type": "color",
+              "id": "footer_text_color",
+              "label": "Pleca lateral",
+              "default": "#666666"
+            },
+            {
+              "type": "color",
+              "id": "footer_border_color",
+              "label": "Enlaces",
+              "default": "#E6E6E6"
+            },
+            {
+              "type": "color",
+              "id": "footer_legal_text_color",
+              "label": "Enlaces",
+              "default": "#ffffff"
+            },
+            {
+              "type": "color",
+              "id": "footer_legal_bg_color",
+              "label": "Enlaces",
+              "default": "#F19729"
             }
           ]
         }

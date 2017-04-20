@@ -70,7 +70,7 @@ module.exports = {
       ]},
       { copyUnmodified: true }),
     new WebpackShellPlugin({
-      onBuildEnd: ['node convert-twig-params-prod.js']
+      // onBuildEnd: ['node convert-twig-params-prod.js']
     })
   ]
 }

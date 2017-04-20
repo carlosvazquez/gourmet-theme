@@ -68,7 +68,7 @@
       &__compared-price {
         margin-bottom: 4px;
         font-size: 1.2em;
-        color: red;
+        color: $product_compared_price_color;
         text-decoration: line-through;
         span.inner {
         color: $body_font_color;

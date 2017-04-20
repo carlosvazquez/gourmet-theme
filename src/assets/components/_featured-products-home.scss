@@ -132,7 +132,7 @@
     }
 
     &--discount {
-      color: red;
+      color: $product_compared_price_color;
       text-decoration: line-through;
     }
     &--preview-1 {
