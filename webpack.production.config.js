@@ -38,6 +38,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './dist/assets/app.js', to: 'assets/app.js.twig' },
       { from: './dist/assets/styles.css.twig', to: 'assets/styles.css.twig' },
+      { from: './src/settings.json', to: 'settings.json' },
       { from: './src/assets', to: 'assets' },
       { from: './src/config', to: 'config' },
       { from: './src/layouts', to: 'layouts' },

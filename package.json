@@ -4,14 +4,14 @@
   "description": "Theme Gourmet Shoperti",
   "repository": {
     "type": "git",
-    "url": "https://heliumdev@bitbucket.org/heliumdev/webpack2.git"
+    "url": "git@github.com:carlosvazquez/gourmet-theme.git"
   },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently -p \"[{name}]\" -n \"HTTP,JS,SASS,LESS\" -c \"bgBlue.bold,bgMagenta.bold,bgPink.bold,bgGreen.bold\" \"npm run dev\" \"npm run serve\" \"livereload public/\"",
     "dev": "webpack -d --config ./webpack.development.config.js --watch --progress --colors --display-error-details",
-    "build": "webpack -d --config ./webpack.prebuild.config.js && node findreplace.js && webpack -d --config ./webpack.production.config.js",
+    "build": "webpack -d --config ./webpack.prebuild.config.js && node findreplace.js && webpack -d --config ./webpack.production.config.js && node themebuilder.js",
     "serve": "webpack-dev-server --progress --colors --config ./webpack.server.config.js "
   },
   "keywords": [
