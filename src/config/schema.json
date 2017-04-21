@@ -2147,11 +2147,16 @@
               "info": "1280px de ancho recomendado"
             },
             {
+              "type": "text",
+              "id": "featured_static_banner_link",
+              "label": "Enlace del banner",
+              "default": "#"
+            },
+            {
               "type": "color",
               "id": "featured_static_banner_bg_color",
               "label": "Color de fondo",
-              "default": "#ffffff",
-              "info": "Usualmente su usa cuando no hay imagen definida."
+              "default": "#ffffff"
             }
           ]
         },
@@ -2176,7 +2181,7 @@
             {
               "type": "text",
               "id": "featured_banner_home_one_btn_text",
-              "default": "¡Comprar Ya!"
+              "default": "Pídelo Ya!"
             },
             {
               "type": "text",

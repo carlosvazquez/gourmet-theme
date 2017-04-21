@@ -114,13 +114,14 @@
       "promo_home_3_icon_name": "food-apple",
 
       "featured_static_banner_image_url": "",
+      "featured_static_banner_link": "",
       "featured_static_banner_bg_color": "#ffffff",
 
       "featured_banner_home_one_title": "MUY CERCA DE TI",
       "featured_banner_home_one_subtitle": "SUCURSALES",
       "featured_banner_home_one_intro": "Describa eso deliciosos ingredientes.",
       "featured_parallax_banner_one_text_color": "#ffffff",
-      "featured_banner_home_one_btn_text": "¡Comprar Ya!",
+      "featured_banner_home_one_btn_text": "Pídelo Ya!",
       "featured_banner_home_one_link": "#",
       "featured_banner_home_one_overlay": true,
       "featured_banner_home_one_image_url": "",

@@ -1,3 +1,4 @@
+{% if settings.featured_banner_home_one_image_url %}
 <div class="featured-banner-home" style="background-image: url({{ settings.featured_banner_home_one_image_url }});">
   <div class="container">
     <div class="row">
@@ -13,3 +14,4 @@
   <div class="featured-banner-home__overlay"></div>
   {% endif %}
 </div>
+{% endif %}
