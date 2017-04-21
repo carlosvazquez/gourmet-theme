@@ -116,11 +116,22 @@
       "promo_home_3_desc": "SIEMPRE FRESCO",
       "promo_home_3_icon": true,
       "promo_home_3_icon_name": "food-apple",
+
       "featured_banner_home_title_color": "#ffffff",
       "featured_banner_home_first_image": "../images/bannersecond.jpg",
       "featured_banner_home_second_title_color": "#ffffff",
       "featured_banner_home_second_image": "../images/bannersecond.jpg",
-      "featured_banner_home_second_image": "../images/bannersecond.jpg",
+      "featured_static_banner_display": true,
+
+      "frontpage_section_1": "featured-slider",
+      "frontpage_section_2": "featured-collections",
+      "frontpage_section_3": "featured-promo",
+      "frontpage_section_4": "featured-static-banner",
+      "frontpage_section_5": "featured-products",
+      "frontpage_section_6": "featured-banner-parallax-one",
+      "frontpage_section_7": "ffeatured-blog",
+      "frontpage_section_8": "featured-banner-parallax-two",
+
       "collections_description": "Descubre las delicias que tenemos",
       "category_page_title": "Categorías",
       "collections_page_title": "Colecciones",

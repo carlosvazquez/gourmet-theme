@@ -36,7 +36,6 @@ module.exports = {
       onBuildEnd: ['node removefiles.js']
     }),
     new CopyWebpackPlugin([
-      { from: './dist/assets/app.js', to: 'assets/app.js.twig' },
       { from: './dist/assets/styles.css.twig', to: 'assets/styles.css.twig' },
       { from: './src/settings.json', to: 'settings.json' },
       { from: './src/assets', to: 'assets' },
@@ -45,6 +44,7 @@ module.exports = {
       { from: './src/pages', to: 'pages' },
       { from: './src/partials', to: 'partials' },
       { from: './src/screenshots', to: 'screenshots' },
+      { from: './src/assets/app.js', to: 'assets/app.js.twig' },
       { from: 'theme.png', to: 'theme.png' },
       { from: 'README.md', to: 'README.md' },
       { from:

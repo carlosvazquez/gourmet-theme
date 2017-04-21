@@ -1465,24 +1465,32 @@
                   "label": "Slider principal"
                 },
                 {
-                  "value": "featured-products",
-                  "label": "Productos destacados"
-                },
-                {
-                  "value": "featured-banner",
-                  "label": "Banner"
-                },
-                {
                   "value": "featured-collections",
                   "label": "Colecciones destacadas"
                 },
                 {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
                 },
                 {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
                 }
               ]
             },
@@ -1490,78 +1498,6 @@
               "type": "select",
               "id": "frontpage_section_2",
               "label": "Sección 2",
-              "default": "featured-products",
-              "options": [
-                {
-                  "value": "none",
-                  "label": "Ningúno"
-                },
-                {
-                  "value": "featured-slider",
-                  "label": "Silder principal"
-                },
-                {
-                  "value": "featured-products",
-                  "label": "Productos destacados"
-                },
-                {
-                  "value": "featured-banner",
-                  "label": "Banner"
-                },
-                {
-                  "value": "featured-collections",
-                  "label": "Colecciones destacadas"
-                },
-                {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
-                }
-              ]
-            },
-            {
-              "type": "select",
-              "id": "frontpage_section_3",
-              "label": "Sección 3",
-              "default": "featured-banner",
-              "options": [
-                {
-                  "value": "none",
-                  "label": "Ningúno"
-                },
-                {
-                  "value": "featured-slider",
-                  "label": "Slider principal"
-                },
-                {
-                  "value": "featured-products",
-                  "label": "Productos destacados"
-                },
-                {
-                  "value": "featured-banner",
-                  "label": "Banner"
-                },
-                {
-                  "value": "featured-collections",
-                  "label": "Colecciones destacadas"
-                },
-                {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
-                },
-                {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
-                }
-              ]
-            },
-            {
-              "type": "select",
-              "id": "frontpage_section_4",
-              "label": "Sección 4",
               "default": "featured-collections",
               "options": [
                 {
@@ -1573,24 +1509,120 @@
                   "label": "Slider principal"
                 },
                 {
+                  "value": "featured-collections",
+                  "label": "Colecciones destacadas"
+                },
+                {
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
+                },
+                {
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
                   "value": "featured-products",
                   "label": "Productos destacados"
                 },
                 {
-                  "value": "featured-banner",
-                  "label": "Banner"
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "frontpage_section_3",
+              "label": "Sección 3",
+              "default": "featured-promos",
+              "options": [
+                {
+                  "value": "none",
+                  "label": "Ningúno"
+                },
+                {
+                  "value": "featured-slider",
+                  "label": "Slider principal"
                 },
                 {
                   "value": "featured-collections",
                   "label": "Colecciones destacadas"
                 },
                 {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
                 },
                 {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "frontpage_section_4",
+              "label": "Sección 4",
+              "default": "featured-static-banner",
+              "options": [
+                {
+                  "value": "none",
+                  "label": "Ningúno"
+                },
+                {
+                  "value": "featured-slider",
+                  "label": "Slider principal"
+                },
+                {
+                  "value": "featured-collections",
+                  "label": "Colecciones destacadas"
+                },
+                {
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
+                },
+                {
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
                 }
               ]
             },
@@ -1598,7 +1630,7 @@
               "type": "select",
               "id": "frontpage_section_5",
               "label": "Sección 5",
-              "default": "featured-newsletter",
+              "default": "featured-products",
               "options": [
                 {
                   "value": "none",
@@ -1609,24 +1641,32 @@
                   "label": "Slider principal"
                 },
                 {
-                  "value": "featured-products",
-                  "label": "Productos destacados"
-                },
-                {
-                  "value": "featured-banner",
-                  "label": "Banner"
-                },
-                {
                   "value": "featured-collections",
                   "label": "Colecciones destacadas"
                 },
                 {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
                 },
                 {
-                  "value": "featured-instagram",
-                  "label": "Galería Instagram"
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
                 }
               ]
             },
@@ -1634,7 +1674,7 @@
               "type": "select",
               "id": "frontpage_section_6",
               "label": "Sección 6",
-              "default": "featured-instagram",
+              "default": "featured-banner-parallax-one",
               "options": [
                 {
                   "value": "none",
@@ -1645,24 +1685,120 @@
                   "label": "Slider principal"
                 },
                 {
+                  "value": "featured-collections",
+                  "label": "Colecciones destacadas"
+                },
+                {
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
+                },
+                {
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
                   "value": "featured-products",
                   "label": "Productos destacados"
                 },
                 {
-                  "value": "featured-banner",
-                  "label": "Banner"
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "frontpage_section_7",
+              "label": "Sección 7",
+              "default": "featured-blog",
+              "options": [
+                {
+                  "value": "none",
+                  "label": "Ningúno"
+                },
+                {
+                  "value": "featured-slider",
+                  "label": "Slider principal"
                 },
                 {
                   "value": "featured-collections",
                   "label": "Colecciones destacadas"
                 },
                 {
-                  "value": "featured-newsletter",
-                  "label": "Newsletter"
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
                 },
                 {
-                  "value": "featured-instagram",
-                  "label": "Instagram"
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
+                }
+              ]
+            },
+            {
+              "type": "select",
+              "id": "frontpage_section_8",
+              "label": "Sección 8",
+              "default": "featured-banner-parallax-two",
+              "options": [
+                {
+                  "value": "none",
+                  "label": "Ningúno"
+                },
+                {
+                  "value": "featured-slider",
+                  "label": "Slider principal"
+                },
+                {
+                  "value": "featured-collections",
+                  "label": "Colecciones destacadas"
+                },
+                {
+                  "value": "featured-promos",
+                  "label": "Promos gráficos"
+                },
+                {
+                  "value": "featured-static-banner",
+                  "label": "Banner"
+                },
+                {
+                  "value": "featured-products",
+                  "label": "Productos destacados"
+                },
+                {
+                  "value": "featured-banner-parallax-one",
+                  "label": "Banner parallax uno"
+                },
+                {
+                  "value": "featured-blog",
+                  "label": "Blog destacado"
+                },
+                {
+                  "value": "featured-banner-parallax-two",
+                  "label": "Banner parallax dos"
                 }
               ]
             }

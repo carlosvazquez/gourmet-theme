@@ -10,7 +10,7 @@ var webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 
 module.exports = {
   entry: {
-    app: './src/app.js'
+    app: './src/dev.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
