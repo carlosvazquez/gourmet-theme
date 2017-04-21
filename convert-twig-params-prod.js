@@ -1,6 +1,6 @@
 var replace = require("replace");
 var utils = require('./utils');
-var json = require('./config/data.json');
+var json = require('./src/config/data.json');
 var newjson  = JSON.stringify(json);
 var params = json.presets.Base;
 var env = true;

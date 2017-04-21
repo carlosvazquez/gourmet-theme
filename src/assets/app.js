@@ -100,8 +100,8 @@ $(document).ready(function() {
   selectPicker();
 
   var doParallax = function(element){
-    if(body) {
-      var banner = $(element);
+    var banner = $(element);
+    if(body && banner.length) {
       var distance = banner.offset().top - win.scrollTop();
       var positionY = distance/6;
       banner.css('backgroundPosition', '50% '+ positionY + 'px');

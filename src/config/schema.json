@@ -267,14 +267,14 @@
           "settings": [
             {
               "type": "color",
-              "id": "featured_banner_home_title_color",
-              "label": "Título",
+              "id": "featured_parallax_banner_one_text_color",
+              "label": "Títulos y textos",
               "default": "rgba(255,255,255,0)"
             },
             {
               "type": "color",
-              "id": "featured_banner_home_second_title_color",
-              "label": "Título",
+              "id": "featured_parallax_banner_one_text_color",
+              "label": "Título y textos",
               "default": "rgba(255,255,255,0)"
             }
           ]
@@ -2134,120 +2134,108 @@
       ]
     },
     {
-      "name": "Página de Inicio - Banner",
+      "name": "Página de Inicio - Banners",
       "icon": "home-page",
       "sections": [
         {
-          "header": "Banner",
+          "header": "Banner estático",
           "settings": [
             {
-              "type": "checkbox",
-              "id": "home_banner_image",
-              "default": true,
-              "label": "Mostrar imagen de fondo"
-            },
-            {
-              "type": "checkbox",
-              "id": "home_banner_responsive",
-              "default": false,
-              "label": "Banner responsivo",
-              "info": "ünicamente mostrará la imagen cómo un enlace."
-            },
-            {
               "type": "image",
-              "id": "home_banner_image_url",
+              "id": "featured_static_banner_image_url",
               "label": "Imagen de fondo",
               "info": "1280px de ancho recomendado"
             },
             {
               "type": "color",
-              "id": "home_banner_background_color",
+              "id": "featured_static_banner_bg_color",
               "label": "Color de fondo",
-              "default": "#cccccc",
+              "default": "#ffffff",
               "info": "Usualmente su usa cuando no hay imagen definida."
+            }
+          ]
+        },
+        {
+          "header": "Banner parallax uno",
+          "settings": [
+            {
+              "type": "text",
+              "id": "featured_banner_home_one_title",
+              "default": "TÍTULO DEL Banner"
             },
             {
               "type": "text",
-              "id": "home_banner_title",
-              "label": "Título",
-              "default": "Lorem Ipsum"
-            },
-            {
-              "type": "color",
-              "id": "home_banner_title_color",
-              "label": "Color del título",
-              "default": "#ffffff"
+              "id": "featured_banner_home_one_subtitle",
+              "default": "SUBTÍTULO"
             },
             {
               "type": "text",
-              "id": "home_banner_desc",
-              "label": "Descripción",
-              "default": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum omnis quidem ex? Soluta magni dolorem tenetur porro nostrum eos, modi perspiciatis minima."
-            },
-            {
-              "type": "select",
-              "id": "home_banner_desc_align",
-              "default": "left",
-              "label": "Alineación del texto",
-              "options": [
-                {
-                  "value": "left",
-                  "label": "Izquierda"
-                },
-                {
-                  "value": "right",
-                  "label": "Derecha"
-                }
-              ]
-            },
-            {
-              "type": "color",
-              "id": "home_banner_desc_color",
-              "label": "Color de la descripción",
-              "default": "#ffffff"
-            },
-            {
-              "type": "checkbox",
-              "id": "home_banner_btn",
-              "default": false,
-              "label": "Mostrar botón de enlace"
+              "id": "featured_banner_home_one_intro",
+              "default": "Describa eso deliciosos ingredientes."
             },
             {
               "type": "text",
-              "id": "home_banner_btn_text",
-              "label": "Texto del botón",
-              "default": "Comprar ahora",
-              "info": "Para mostrar todos los productos de esta colección deja vacío este campo"
+              "id": "featured_banner_home_one_btn_text",
+              "default": "¡Comprar Ya!"
             },
             {
               "type": "text",
-              "id": "home_banner_btn_url",
-              "label": "Ruta de destino",
+              "id": "featured_banner_home_one_link",
               "default": "#"
             },
             {
-              "type": "color",
-              "id": "home_banner_btn_text_color",
-              "label": "Color del texto del botón",
-              "default": "#ffffff"
+              "type": "checkbox",
+              "id": "featured_banner_home_one_overlay",
+              "default": true,
+              "label": "Mostrar capa de oscurecimiento"
             },
             {
-              "type": "color",
-              "id": "home_banner_btn_bg_color",
-              "label": "Color de fondo del botón",
-              "default": "#43547e"
+              "type": "image",
+              "id": "featured_banner_home_one_image_url",
+              "label": "Imagen de fondo",
+              "info": "1280px de ancho recomendado"
+            }
+          ]
+        },
+        {
+          "header": "Banner parallax dos",
+          "settings": [
+            {
+              "type": "text",
+              "id": "featured_banner_home_two_title",
+              "default": "TÍTULO DEL Banner"
             },
             {
-              "type": "color",
-              "id": "home_banner_btn_text_color_hover",
-              "label": "Color del texto del botón con mouse encima.",
-              "default": "#ffffff"
+              "type": "text",
+              "id": "featured_banner_home_two_subtitle",
+              "default": "SUBTÍTULO"
             },
             {
-              "type": "color",
-              "id": "home_banner_btn_bg_color_hover",
-              "label": "Color de fondo del botón con mouse encima.",
-              "default": "#417f94"
+              "type": "text",
+              "id": "featured_banner_home_two_intro",
+              "default": "Describa eso deliciosos ingredientes."
+            },
+            {
+              "type": "text",
+              "id": "featured_banner_home_two_btn_text",
+              "default": "¡Comprar Ya!"
+            },
+            {
+              "type": "text",
+              "id": "featured_banner_home_two_link",
+              "default": "#"
+            },
+            {
+              "type": "checkbox",
+              "id": "featured_banner_home_two_overlay",
+              "default": true,
+              "label": "Mostrar capa de oscurecimiento"
+            },
+            {
+              "type": "image",
+              "id": "featured_banner_home_two_image_url",
+              "label": "Imagen de fondo",
+              "info": "1280px de ancho recomendado"
             }
           ]
         }
