@@ -30,9 +30,10 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .navbanner {
     text-align: center;
-    background-color: $navbanner_bg;
+    background-color: $navigation_top_banner_bg_color;
     padding: 2px 0 3px 0;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -41,11 +42,12 @@
     transition: all .5s ease-in-out;
       &__title {
         font-size: 12px;
-        color: $navbanner_text;
+        color: $navigation_top_banner_text_color;
         text-transform: uppercase;
         margin:0;
         word-spacing: 3px;
         letter-spacing: .5px;
+        a { color: $navigation_top_banner_text_color; }
       }
       &--modifier {
         
@@ -258,6 +260,7 @@
   -ms-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
   .navbanner {
-    background-color: $navbanner_bg_alter;
+    background-color: $navigation_top_banner_bg_color_alter;
+    a { color: $navigation_top_banner_text_color;}
   }
 }

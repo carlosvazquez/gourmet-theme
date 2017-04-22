@@ -34,19 +34,19 @@
           "settings": [
             {
               "type": "color",
-              "id": "navbanner_bg",
+              "id": "navigation_top_banner_bg_color",
               "label": "Fondo",
               "default": "rgba(0,0,0,.8)"
             },
             {
               "type": "color",
-              "id": "navbanner_bg",
+              "id": "navigation_top_banner_bg_color_alter",
               "label": "Fondo al desplazar",
               "default": "#F19729"
             },
             {
               "type": "color",
-              "id": "navbanner_text",
+              "id": "navigation_top_banner_text_color",
               "label": "Texto",
               "default": "#ffffff"
             }
@@ -2142,7 +2142,7 @@
           "settings": [
             {
               "type": "checkbox",
-              "id": "navigation_top_banner",
+              "id": "navigation_top_banner_active",
               "default": true,
               "label": "Activar"
             },

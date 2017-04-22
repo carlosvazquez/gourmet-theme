@@ -17,9 +17,7 @@
       "nav_menu_bg": "rgba(255,255,255,.85)",
       "nav_menu_scrolled_bg": "rgba(255,255,255,1)",
       "nav_mobile_menu_bg": "#dcdcdc",
-      "navbanner_bg": "rgba(0,0,0,.8)",
-      "navbanner_bg_alter": "#F19729",
-      "navbanner_text": "#ffffff",
+
       "body_font_size": "16px",
       "product_compared_price_color": "#C70039",
       "slide_bg_color": "#ffffff",
@@ -113,7 +111,10 @@
       "promo_home_3_icon": true,
       "promo_home_3_icon_name": "food-apple",
 
-      "navigation_top_banner": true,
+      "navigation_top_banner_active": true,
+      "navigation_top_banner_bg_color": "rgba(0,0,0,.8)",
+      "navigation_top_banner_bg_color_alter": "#F19729",
+      "navigation_top_banner_text_color": "#ffffff",
       "navigation_top_banner_text": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000",
       "navigation_top_banner_link": "#",
 
