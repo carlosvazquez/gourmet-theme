@@ -102,12 +102,15 @@ $(document).ready(function() {
   var doParallax = function(element){
     var banner = $(element);
 
-    if(body && banner.length && !isMobile()) {
+    if(body && banner.length) {
       var initPosition = 0;
       var distance = banner.offset().top - win.scrollTop();
-      console.log(distance);
       var positionY = distance/4;
-      banner.css('backgroundPosition', '50% '+ positionY + 'px');
+      if(isMobile()) {
+        banner.css('backgroundPosition', '0 '+ '0');
+      } else {
+        banner.css('backgroundPosition', '50% '+ positionY + 'px');
+      }
     }
   }
 

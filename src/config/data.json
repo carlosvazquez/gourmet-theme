@@ -113,6 +113,10 @@
       "promo_home_3_icon": true,
       "promo_home_3_icon_name": "food-apple",
 
+      "navigation_top_banner": true,
+      "navigation_top_banner_text": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000",
+      "navigation_top_banner_link": "#",
+
       "featured_static_banner_image_url": "",
       "featured_static_banner_link": "#",
       "featured_static_banner_bg_color": "#ffffff",

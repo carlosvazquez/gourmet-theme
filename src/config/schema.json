@@ -30,7 +30,7 @@
           ]
         },
         {
-          "header": "Banner Superior",
+          "header": "Banner en Navegación",
           "settings": [
             {
               "type": "color",
@@ -2137,6 +2137,29 @@
       "name": "Página de Inicio - Banners",
       "icon": "home-page",
       "sections": [
+        {
+          "header": "Banner en Navegación",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "navigation_top_banner",
+              "default": true,
+              "label": "Activar"
+            },
+            {
+              "type": "text",
+              "id": "navigation_top_banner_text",
+              "label": "Enlace del banner",
+              "default": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000"
+            },
+            {
+              "type": "text",
+              "id": "navigation_top_banner_link",
+              "label": "Enlace de destino",
+              "default": "#"
+            }
+          ]
+        },
         {
           "header": "Banner estático",
           "settings": [

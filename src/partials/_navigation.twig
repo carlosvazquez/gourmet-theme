@@ -1,15 +1,18 @@
     <!-- Navigation Component -->
 <nav class="navbar navbar-fixed-top navigation">
   <!-- supernavbar banner-->
+{% if settings.navigation_top_banner %}
   <div class="navbanner hidden-xs hidden-sms">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p class="navbanner__title">Envío gratis en pedidos superiores a $200 | Área de entrega Bosques</p>
+          <p class="navbanner__title">
+          <a href="{{ settings.navigation_top_banner_link }}">{{ settings.navigation_top_banner_text }}</a></p>
         </div>
       </div>
     </div>
   </div>
+{% endif %}
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
