@@ -21,4 +21,7 @@
         color: $brand_main_color;
       }
     }
+    &--nonactive {
+      line-height: 2;
+    }
 }
