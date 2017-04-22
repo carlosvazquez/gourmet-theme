@@ -2,9 +2,9 @@
   background-color: $body_background_color;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-attachment: initial;
+  background-position: center center;
   text-align: center;
   padding-top: 6em;
   padding-bottom: 6em;
@@ -12,14 +12,15 @@
   margin-bottom: 30px;
   margin-top: 0;
   position: relative;
+  @media(max-width:480px) {
+  }
   @media(max-width:767px) {
-    
   }
   @media(min-width:768px) {
-    
   }
   @media(min-width:992px) {
-    
+    background-position: 0 0;
+    background-attachment: fixed;
   }
   @media(min-width:1200px) {
     
