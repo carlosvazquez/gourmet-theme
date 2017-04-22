@@ -12,10 +12,13 @@
       "btn_text_color_hover": "#ffffff",
       "btn_bg_color": "#f15a29",
       "btn_bg_color_hover": "#FF1E00",
+      
       "nav_link_text_color":"#666666",
       "nav_link_text_hover_color": "#F19729",
-      "nav_menu_bg": "rgba(255,255,255,.85)",
-      "nav_menu_scrolled_bg": "rgba(255,255,255,1)",
+      "nav_link_scrolled_text_color":"#666666",
+      "nav_link_scrolled_text_hover_color": "#F19729",
+      "nav_menu_bg": "rgba(255,255,255,1)",
+      "nav_menu_scrolled_bg": "rgba(255,255,255,.5)",
       "nav_mobile_menu_bg": "#dcdcdc",
 
       "body_font_size": "16px",
@@ -111,9 +114,8 @@
       "promo_home_3_icon": true,
       "promo_home_3_icon_name": "food-apple",
 
-      "navigation_top_banner_active": true,
+      "navigation_top_banner_active": false,
       "navigation_top_banner_bg_color": "rgba(0,0,0,.8)",
-      "navigation_top_banner_bg_color_alter": "#F19729",
       "navigation_top_banner_text_color": "#ffffff",
       "navigation_top_banner_text": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000",
       "navigation_top_banner_link": "#",

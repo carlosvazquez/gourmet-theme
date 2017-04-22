@@ -40,12 +40,6 @@
             },
             {
               "type": "color",
-              "id": "navigation_top_banner_bg_color_alter",
-              "label": "Fondo al desplazar",
-              "default": "#F19729"
-            },
-            {
-              "type": "color",
               "id": "navigation_top_banner_text_color",
               "label": "Texto",
               "default": "#ffffff"
@@ -59,13 +53,13 @@
               "type": "color",
               "id": "nav_menu_bg",
               "label": "Fondo",
-              "default": "rgba(255,255,255,.85)"
+              "default": "rgba(255,255,255,1)"
             },
             {
               "type": "color",
               "id": "nav_menu_scrolled_bg",
               "label": "Fondo desplazado",
-              "default": "rgba(255,255,255,1)"
+              "default": "rgba(255,255,255,.5)"
             },
             {
               "type": "color",
@@ -2143,7 +2137,7 @@
             {
               "type": "checkbox",
               "id": "navigation_top_banner_active",
-              "default": true,
+              "default": false,
               "label": "Activar"
             },
             {

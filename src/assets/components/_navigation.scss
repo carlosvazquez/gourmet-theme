@@ -30,11 +30,13 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .navbanner {
     text-align: center;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
     background-color: $navigation_top_banner_bg_color;
-    padding: 2px 0 3px 0;
+    height: 20px;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -240,8 +242,8 @@
     .navbar-brand.navigation__logo-text {
       // padding: 13px 0;
       font-size: 1.4em;
-      padding-top: 35px;
-      padding-bottom: 35px;
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
       .navbar-nav > li > a {
         background-color: transparent;
@@ -259,8 +261,16 @@
   -o-transition: background-color .5s ease-in-out;
   -ms-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
-  .navbanner {
-    background-color: $navigation_top_banner_bg_color_alter;
-    a { color: $navigation_top_banner_text_color;}
-  }
+}
+.nav-hidde {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -20px;
+  transition: all 0.5s ease;
+}
+.nav-show {
+  visibility: visible;
+  opacity: 1;
+  margin-top:0;
+  transition: all 0.5s ease;
 }

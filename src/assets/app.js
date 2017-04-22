@@ -120,12 +120,15 @@ $(document).ready(function() {
     
     if(win.width() > 768) {
       var st = $(this).scrollTop();
+      var navbanner = $('.navbanner') || false;
       slider_content.css({ 'opacity' : (1 - st/limit), 'position':'relative', 'top' : (st/2) }); 
 
       if(win.scrollTop() > navigation.outerHeight()) {
         navigation.addClass('navigation-scrolled');
+        navbanner.addClass('nav-hidde').removeClass('nav-show');
       } else {
         navigation.removeClass('navigation-scrolled');
+        navbanner.removeClass('nav-hidde').addClass('nav-show');
       }
     }
 
