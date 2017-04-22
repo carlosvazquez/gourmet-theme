@@ -15,10 +15,9 @@
       
       "nav_link_text_color":"#666666",
       "nav_link_text_hover_color": "#F19729",
-      "nav_link_scrolled_text_color":"#666666",
-      "nav_link_scrolled_text_hover_color": "#F19729",
       "nav_menu_bg": "rgba(255,255,255,1)",
       "nav_menu_scrolled_bg": "rgba(255,255,255,.5)",
+
       "nav_mobile_menu_bg": "#dcdcdc",
 
       "body_font_size": "16px",
