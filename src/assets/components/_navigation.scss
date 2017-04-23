@@ -2,7 +2,16 @@
   padding: 1.2em 1em;
   line-height: 1.6;
 }
-
+.navbar-collapse {
+  max-height: 800px !important;
+  -webkit-transition:200ms ease;
+  -moz-transition:200ms ease;
+  -o-transition:200ms ease;
+  transition:200ms ease;
+  @media(max-width:767px) {
+    background-color: $nav_mobile_menu_bg;
+  }
+}
 .navigation {
   margin-bottom: 0;
   .nav > li {
@@ -59,12 +68,8 @@
     border-color: #e7e7e7;
   }
 
-
-
-
   .navbar-brand {margin-right: 1em; height: auto;}
     &__link {
-      font-size: .9em;
       line-height: 1.6;
       color: $nav_link_text_color;
       i.mdi {
@@ -169,6 +174,8 @@
       }
     }
 }
+
+
 .navigation-scrolled  {
   background-color: $nav_menu_scrolled_bg;
   -webkit-transition: background-color .5s ease-in-out;
