@@ -24,4 +24,7 @@
     &--nonactive {
       line-height: 2;
     }
+    .navigation__link.second-navigation__link.second-navigation--nonactive:hover {
+      color: $nav_link_text_color;
+    }
 }

@@ -33,37 +33,55 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right second-navigation hidden-xs">
       {% if cart.total_items > 0 %}
-        <li><a class="navigation__link second-navigation__link second-navigation--active" href="/cart.html"><i class="mdi mdi-cart second-navigation__icon "></i><sup class="second-navigation__qty">{{ cart.total_items }}</sup></a></li>
+        <li><a class="navigation__link second-navigation__link second-navigation--active" href="/carrito"><i class="mdi mdi-cart second-navigation__icon "></i><sup class="second-navigation__qty">{{ cart.total_items }}</sup></a></li>
       {% else %}
         <li><span class="navigation__link second-navigation__link second-navigation--nonactive"><i class="mdi mdi-cart-outline second-navigation__icon "></i></span></li>
       {% endif %}
 
-
-        
-        <li><a class="navigation__link second-navigation__link" href="/customers/register.html">REGISTRARSE</a></li>
-        <li><a class="navigation__link second-navigation__link" href="/customers/login.html">INGRESAR</a></li>
+      {% if store.customer_accounts_enabled_or_optional %}
+        {% if customer %}
+          <li><a class="navigation__link second-navigation__link" href="/cuenta/logout">SALIR</a></li>
+          <li><a class="navigation__link second-navigation__link" href="/cuenta">MI CUENTA</a></li>
+        {% else %}
+          <li><a class="navigation__link second-navigation__link" href="/cuenta/login">INGRESAR</a></li>
+          <li><a class="navigation__link second-navigation__link" href="/cuenta/registro">REGISTRARSE</a></li>
+        {% endif %}
+      {% endif %}
       </ul>
+
       <ul class="nav navbar-nav navbar-right first-navigation">
-        <li><a class="navigation__link" href="/">INICIO</a></li>
-        <li><a class="navigation__link" href="/page.html">RECOMENDACIONES</a></li>
-        <li><a class="navigation__link" href="/collections.html">ENTREGAS</a></li>
-        <li><a class="navigation__link" href="/collection.html">COLLECTION</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle navigation__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENÚ <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a class="navigation__link" href="/products.html">Productos</a></li>
-            <li><a class="navigation__link" href="/product.html">Producto</a></li>
-            <li><a class="navigation__link" href="/page.html">Sugerencias del chef & Sugerencias del chef</a></li>
-            <li><a class="navigation__link" href="/page.html">Rollos</a></li>
-            <li><a class="navigation__link" href="/category.html">Categorías</a></li>
+      {% for link in menus.main %}
+        {% if link.children | length > 0 %}
+        <li class="has-children">
+          <a href="{{ link.url }}" class="sub__link">{{ link.name }}</a>
+          <a href="#" class="submenu-toggle"><i class="mdi mdi-chevron-down"></i></a>
+          <ul class="subnav">
+            {% for children in link.children %}
+              {% include '_nav-item.twig' with {'link': children} %}
+            {% endfor %}
           </ul>
         </li>
-        <li><a class="navigation__link" href="/blog.html">BLOG</a></li>
-        <li><a class="navigation__link" href="/post.html">POST</a></li>
-        <li><a class="navigation__link" href="/contact.html">CONTACTO</a></li>
-        <li><a class="navigation__link visible-xs" href="/customers/login.html">INGRESAR</a></li>
-        <li><a class="navigation__link visible-xs" href="/customers/register.html">REGISTRARSE</a></li>
-        <li><a class="navigation__link visible-xs" href="/cart.html">CARRITO <span>0</span></a></li>
+        {% else %}
+        <li><a class="navigation__link" href="{{ link.url }}">{{ link.name }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+
+
+      {% if store.customer_accounts_enabled_or_optional %}
+        {% if customer %}
+          <li><a class="navigation__link visible-xs" href="/cuenta/logout">SALIR</a></li>
+          <li><a class="navigation__link visible-xs" href="/cuenta">MI CUENTA</a></li>
+        {% else %}
+          <li><a class="navigation__link visible-xs" href="/cuenta/login">INGRESAR</a></li>
+          <li><a class="navigation__link visible-xs" href="/cuenta/registro">REGISTRARSE</a></li>
+        {% endif %}
+      {% endif %}
+
+      {% if cart.total_items > 0 %}
+        <li><a class="navigation__link visible-xs" href="/carrito">Carrito {{ cart.total_items }}</a></li>
+      {% endif %}
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>
