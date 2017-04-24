@@ -1,59 +1,65 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-<div class="container-fluid customer">
+<div class="container page register-page">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 header">
-      {% include '_titles.twig' with {title: 'Crea una Cuenta', uppercase: settings.heading_uppercase_titles} only %}
-      <hr class="spacer">
-    </div>
-  </div>
-  <div class="row content">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-    {% form 'customer_register' 'role="form" class="login-form"' %}
-      <div class="row row__inputs">
-        <div class="col-x-12">
-          <div class="form-group">
-            <div class="input-group input-group-lg login-form__input">
-              <input type="text" class="form-control input-lg" id="first_name" name="first_name" placeholder="Nombre" required>
-            </div>
-          </div>
-        </div>
-        <div class="col-x-12">
-          <div class="form-group">
-            <div class="input-group input-group-lg login-form__input">
-              <input type="text" class="form-control input-lg" id="last_name" name="last_name" placeholder="Apellido" required>
-            </div>
-          </div>
-        </div>
-        <div class="col-x-12">
-          <div class="form-group">
-            <div class="input-group input-group-lg login-form__input">
-              <input type="email" class="form-control input-lg" id="email" name="email" placeholder="Correo electrónico" required>
-            </div>
-          </div>
-        </div>
-        <div class="col-x-12">
-          <div class="form-group">
-            <div class="input-group input-group-lg login-form__input">
-              <input type="password" class="form-control input-lg" id="password" name="password" placeholder="Contraseña" required>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 text-center" style="margin-top: 20px;">
-        <div class="form-group">
-          <input class="btn btn-success login-form__button" type="submit" name="submit" id="submit" value="&nbsp; Crear cuenta &nbsp;">
-        </div>
-        ¿Ya estás registrado? <a href="/cuenta/login">Accede a tu cuenta</a>
+    <div class="col-xs-12">
+      <div class="register-page__header block_title">
+        <h1 class="register-page__title title">Crea una Cuenta</h1>
+        <hr class="page__line">
       </div>
     </div>
-
-
-    {% endform %}
-
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center register-page__create-account">
+      <p class="register-page__create-account-link">¿Ya tienes cuenta? <a href="/cuenta/login">Accede a tu cuenta</a></p>
     </div>
-  </div> <!-- .content -->
-</div> <!-- .container-fluid -->
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-4 register-page__content">
+        {% form 'customer_register' 'role="form" class="register-page__login-form"' %}
+        <form action="https://bold-theme.shoperti.com/cuenta/login" method="POST" role="form" class="register-page__login-form">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <div class="input-group input-group-lg register-page__form--input">
+                  <input type="text" data-validation="length required" data-validation-length="min4" data-validation-error-msg="Escribe tu nombre por favor." class="form-control input-lg" id="first_name" name="first_name" placeholder="Nombre" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <div class="input-group input-group-lg register-page__form--input">
+                  <input type="text" data-validation="length required" data-validation-length="min4" data-validation-error-msg="Escribe tu apellido por favor." class="form-control input-lg" id="last_name" name="last_name" placeholder="Apellido" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <div class="input-group input-group-lg register-page__form--input">
+                  <input type="email" data-validation="email required" data-validation-error-msg="La dirección de correo no es válida." class="form-control input-lg" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-group">
+                <div class="input-group input-group-lg register-page__form--input">
+                  <input data-validation="length required" data-validation-length="min8" data-validation-error-msg="Escribe una contraseña de mínimo 8 caracters" type="password" class="form-control input-lg" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <div class="form-group">
+                <input class="btn btn-success btn-lg register-page__button" type="submit" name="submit" id="submit" value="&nbsp; Crear cuenta &nbsp;">
+              </div>
+            </div>
+          </div>
+        </form>
+        {% endform %}
+      </div>
+  </div>
+</div>
 {% endblock %}
+

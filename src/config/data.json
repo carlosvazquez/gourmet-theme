@@ -12,7 +12,7 @@
       "btn_text_color_hover": "#ffffff",
       "btn_bg_color": "#f15a29",
       "btn_bg_color_hover": "#FF1E00",
-      
+
       "nav_link_text_color":"#666666",
       "nav_link_text_hover_color": "#F19729",
       "nav_menu_bg": "rgba(255,255,255,1)",
@@ -20,7 +20,14 @@
 
       "nav_mobile_menu_bg": "#dcdcdc",
 
+      "body_font": "Google+Roboto",
       "body_font_size": "16px",
+      "body_font_weight": "300",
+
+      "heading_font": "Google+Roboto",
+      "heading_font_size": "36px",
+      "heading_font_weight": "800",
+
       "product_compared_price_color": "#C70039",
       "slide_bg_color": "#ffffff",
       "slide_title_color": "#ffffff",
@@ -46,40 +53,44 @@
       "footer_legal_bg_color": "#F19729",
 
       "slide_1": true,
-      "slide_2": true,
-      "slide_3": true,
-      "slide_4": true,
-      "slide_adaptative": false,
+      "slide_2": false,
+      "slide_3": false,
+      "slide_4": false,
       "slide_overlay": true,
-      "slide_title_shadow": true,
+      "slide_text_shadow": true,
+
       "slide_title_font_size": "30px",
       "slide_subtitle_font_size": "14px",
 
-      "slide_1_image_display": true,
+      "slide_1_image_display": false,
       "slide_1_image_bg": "",
-      "slide_1_title": "",
-      "slide_1_btn_display": true,
+      "slide_1_subtitle": "Subtítulo",
+      "slide_1_title": "Título",
+      "slide_1_btn_display": false,
       "slide_1_btn_text": "Ver más",
       "slide_1_btn_link": "#",
 
-      "slide_2_image_display": true,
+      "slide_2_image_display": false,
       "slide_2_image_bg": "",
-      "slide_2_title": "",
-      "slide_2_btn_display": true,
+      "slide_2_subtitle": "Subtítulo",
+      "slide_2_title": "Título",
+      "slide_2_btn_display": false,
       "slide_2_btn_text": "Ver más",
       "slide_2_btn_link": "#",
 
-      "slide_3_image_display": true,
+      "slide_3_image_display": false,
       "slide_3_image_bg": "",
-      "slide_3_title": "",
-      "slide_3_btn_display": true,
+      "slide_3_subtitle": "Subtítulo",
+      "slide_3_title": "Título",
+      "slide_3_btn_display": false,
       "slide_3_btn_text": "Ver más",
       "slide_3_btn_link": "#",
 
-      "slide_4_image_display": true,
+      "slide_4_image_display": false,
       "slide_4_image_bg": "",
-      "slide_4_title": "",
-      "slide_4_btn_display": true,
+      "slide_4_subtitle": "Subtítulo",
+      "slide_4_title": "Título",
+      "slide_4_btn_display": false,
       "slide_4_btn_text": "Ver más",
       "slide_4_btn_link": "#",
 
@@ -169,8 +180,8 @@
       "product_status_available_text": "DISPONIBLE",
       "product_status_not_available_text": "AGOTADO",
       "product_thumbnail_form": "thumbnail_landscape",
-      "post_thumbnail_form": "thumbnail_square"
-
+      "post_thumbnail_form": "thumbnail_square",
+      "footer_display_newsletter": true
     }
   }
 }

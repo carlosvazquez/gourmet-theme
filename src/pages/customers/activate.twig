@@ -1,33 +1,36 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-<div class="container-fluid customer">
+<div class="container page activate-page">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 header">
-      {% include '_titles.twig' with {title: 'Activar Cuenta', uppercase: settings.heading_uppercase_titles} only %}
-      <hr class="spacer">
-    </div>
-  </div>
-  <div class="row content">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-    <div class="row row__inputs">
-      <div class="col-sm-12 ">
-      {% form 'customer_activate' 'role="form"' %}
-        <div class="form-group">
-          <input type="password" class="form-control input-lg" id="password" name="password" placeholder="Nueva Contraseña" required>
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control input-lg" id="password_confirmation" name="password_confirmation" placeholder="Confirmar Contraseña" required>
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Activar cuenta</button>
-        </div>
-        <input type="hidden" name="token" value="{{ token }}">
-        <input type="hidden" name="email" value="{{ email }}">
-      {% endform %}
+    <div class="col-xs-12">
+      <div class="activate-page__header block_title">
+        <h1 class="activate-page__title title">Activar cuenta</h1>
+        <p class="page__description">When it comes to this Turkish glassware brand, simplicity reigns supreme.</p>
+        <hr class="page__line">
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 activate-page__content">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-md-offset-3">
+          {% form 'customer_activate' 'role="form"' %}
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" id="password" name="password" placeholder="Nueva Contraseña" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" id="password_confirmation" name="password_confirmation" placeholder="Confirmar Contraseña" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg">Activar cuenta</button>
+            </div>
+            <input type="hidden" name="token" value="{{ token }}">
+            <input type="hidden" name="email" value="{{ email }}">
+          {% endform %}
+        </div>
+      </div>
     </div>
-  </div> <!-- .content -->
-</div> <!-- .container-fluid -->
+  </div>
+</div>
 {% endblock %}

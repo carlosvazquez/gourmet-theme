@@ -1,16 +1,18 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-<div class="container-fluid customer">
+<div class="container page order-page">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 header">
-      {% include '_titles.twig' with {title: 'Orden'~'<span>#'~order.number~'</span>', uppercase: settings.heading_uppercase_titles} only %}
-      <p class="lead">Referencia: {{ order.id }}</p>
-      <hr class="spacer">
+    <div class="col-xs-12">
+      <div class="order-page__header block_title">
+        <h1 class="order-page__title title">Orden #{{ order.number }}</h1>
+        <p class="page__description">Referencia: {{ order.id }}</p>
+        <hr class="page__line">
+      </div>
     </div>
   </div>
-  <div class="row content">
-    <div class="col-xs-12">
+  <div class="row">
+    <div class="col-sm-12 order-page__content">
       <div class="row">
         <div class="col-md-6">
           <h4 class="title">Dirección de envío</h4>
@@ -71,8 +73,8 @@
           </div>
         </div>
       </div>
-    </div>
   {% include '_pagination.twig' %}
-  </div> <!-- .content -->
-</div> <!-- .container-fluid -->
+    </div>
+  </div>
+</div>
 {% endblock %}

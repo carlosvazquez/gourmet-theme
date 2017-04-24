@@ -1,17 +1,20 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-<div class="container-fluid simple-page">
+<div class="container page simple-page">
   <div class="row">
-    <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 header">
-      {% include '_titles.twig' with {title: page.title, uppercase: settings.heading_uppercase_titles} only %}
-      <hr class="spacer">
+    <div class="col-xs-12">
+      <div class="simple-page__header block_title">
+        <h1 class="simple-page__title title">{{ page.title }}</h1>
+        <hr class="page__line">
+      </div>
     </div>
   </div>
-  <div class="row content">
-  <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-    {{ page.content }}
+  <div class="row">
+    <div class="col-sm-12 simple-page__content">
+      {{ page.content }}
+    </div>
   </div>
-  </div> <!-- .content -->
-</div> <!-- .container-fluid -->
+</div>
+
 {% endblock %}

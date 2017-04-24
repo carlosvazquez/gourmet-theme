@@ -1,6 +1,16 @@
 // Vars from Config file
 $brand_main_color: "{{ settings.brand_main_color }}";
+
 $body_font_size: "{{ settings.body_font_size }}";
+$body_font: "{{ settings.body_font | remove('Google+') | replace({'+': ' '}) }}, sans-serif";
+$body_font_weight: "{{ settings.body_font_weight }}";
+$body_font_size: "{{ settings.body_font_size }}";
+$body_font_weight: "{{ settings.body_font_weight }}";
+
+$heading_font: "{{ settings.heading_font | remove('Google+') | replace({'+': ' '}) }}, sans-serif";
+$heading_font_size: "{{ settings.heading_font_size }}";
+$heading_font_weight: "{{ settings.heading_font_weight }}";
+
 $body_background_color: "{{ settings.body_background_color }}";
 $headings_color: "{{ settings.headings_color }}";
 $headings_second_color: "{{ settings.headings_second_color }}";
