@@ -125,7 +125,7 @@
       "promo_home_3_icon_name": "food-apple",
 
       "navigation_top_banner_active": false,
-      "navigation_top_banner_bg_color": "rgba(0,0,0,.8)",
+      "navigation_top_banner_bg_color": "#7dc301",
       "navigation_top_banner_text_color": "#ffffff",
       "navigation_top_banner_text": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000",
       "navigation_top_banner_link": "#",
