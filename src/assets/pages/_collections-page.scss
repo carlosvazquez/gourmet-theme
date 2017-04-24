@@ -18,26 +18,30 @@
       filter: grayscale(0);
     }
     &__content {
+      padding-bottom: 40px;
+      min-height: 400px;
+    }
+    &__collection {
         display: table;
         width: 100%;
-        min-height: 400px;
+        min-height: 200px;
         /* Extra Small Devices, Phones */ 
         @media only screen and (min-width : 480px) {
-          min-height: 160px;
+          min-height: 140px;
         }
         /* Extra Small Devices, Phones */ 
         @media only screen and (min-width : 640px) {
-          min-height: 170px;
+          min-height: 140px;
         }
 
         /* Small Devices, Tablets */
         @media only screen and (min-width : 768px) {
-          min-height: 180px;
+          min-height: 160px;
         }
 
         /* Medium Devices, Desktops */
         @media only screen and (min-width : 992px) {
-          min-height: 190px;
+          min-height: 180px;
         }
 
         /* Large Devices, Wide Screens */
@@ -65,6 +69,7 @@
         transition: background-color .5s ease-out;
         .collections-page__title {
           color: white;
+          text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
         }
     }
     &__inner:hover {
@@ -97,6 +102,9 @@
     &--bg_img {
       -webkit-filter: grayscale(.3);
       filter: grayscale(.3);
+    }
+    &--bg_no-img {
+      background-color: $brand_main_color;
     }
 
 }
