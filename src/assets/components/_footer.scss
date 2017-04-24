@@ -45,21 +45,23 @@
   &__list-5 {
   }
   &__section-title {
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    font-weight:800;
+    font-family: $heading_font;
+    font-weight: $heading_font_weight;
     margin-top: 0;
     margin-bottom: 2px;
     color: $footer_title_color;
     display: inline-block;
     width: 100%;
+    font-size: 1.2em;
     @media(max-width:767px) {
       margin-bottom: 0;
     }
   }
   &__section-subtitle {
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    font-weight:700;
+    font-family: $heading_font;
+    font-weight: $heading_font_weight;
     margin-bottom: 10px;
+    font-size: 1em;
   }
   &__section-icon {
     padding:2px;

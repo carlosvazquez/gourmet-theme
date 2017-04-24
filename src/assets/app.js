@@ -1,13 +1,16 @@
 $(document).ready(function() {
+
   var win = $(window),
   body = $('body').hasClass('home'),
   navigation = $('.navigation'),
   slider = $('.featured-slider-home'),
   slider_content = $('.featured-slider-home__content'),
   limit = 400;
+
   var bodyPadding = function() {
     $('body').css({ 'padding-top' : navigation.outerHeight()}); 
   }
+
   var selectPicker = function() {
     $('.cart__resume-table__product-quantity.selectpicker').selectpicker({
       style: 'btn-link item_refresh',
@@ -18,6 +21,7 @@ $(document).ready(function() {
   var isMobile = function() {
     return ( win.width() < 768 ? true : false );
   }
+
   var changeColspan = function() {
     if(win.width() < 421) {
       $('.search-page__table--thead-th').attr('colspan', 1);
@@ -25,6 +29,7 @@ $(document).ready(function() {
       $('.search-page__table--thead-th').attr('colspan', 2);
     }
   }
+
   var isSmallMobile = function() {
     return ( win.width() < 320 ? true : false );
   }
@@ -35,9 +40,11 @@ $(document).ready(function() {
     }
     boxArray = [];
   }
+
   var getSidebarWidth = function() {
     return $('.sidebar__sidebar-container').width();
   }
+
   var setSidebarWidth = function() {
     $('.sidebar__sidebar').css({'width': getSidebarWidth() });
   }
@@ -75,6 +82,7 @@ $(document).ready(function() {
       }
     });
   };
+
   var updateMenu = function(element, status, menu){
     $(element).parents('footer__menu');
     $('.footer').find('.footer__menu').addClass('footer__menu--close');
@@ -133,6 +141,7 @@ $(document).ready(function() {
     }
 
   });
+
   $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -154,9 +163,11 @@ $(document).ready(function() {
     setSidebarWidth();
     changeColspan();
   });
+
   var setCategoryMenu = function () {
     $('.sidebar__sidebar-submenu').removeClass('active').slideUp();
   }
+  
   setCategoryMenu();
 
   $(".sidebar__sidebar-list-toggle").click(function(e){
@@ -176,5 +187,12 @@ $(document).ready(function() {
     }
   });
 
+  var $adminBar = $('#admin-bar-iframe');
+
+  if ($adminBar.length) {
+    $('body').css({ position: 'initial' });
+    $('#top-navbar').css({ position: 'relative' });
+    $('.navbar.navbar-fixed-top.navigation').css({ 'margin-top': '40px' });
+  }
 
 });

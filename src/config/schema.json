@@ -59,7 +59,7 @@
               "type": "color",
               "id": "nav_menu_scrolled_bg",
               "label": "Fondo desplazado",
-              "default": "rgba(255,255,255,.5)"
+              "default": "rgba(255,255,255,.85)"
             },
             {
               "type": "color",
@@ -605,7 +605,7 @@
               "type": "select",
               "id": "heading_font",
               "label": "Tipografía",
-              "default": "Google+Roboto",
+              "default": "Google+Roboto+Slab",
               "options": [
                 {
                   "value": "Google+Arvo",
@@ -814,7 +814,7 @@
               "type": "select",
               "id": "heading_font_weight",
               "label": "Peso",
-              "default": "800",
+              "default": "700",
               "info": "Comprueba que existe el peso seleccionado en https://fonts.google.com.",
               "options": [
                 {

@@ -15,8 +15,8 @@
 
       "nav_link_text_color":"#666666",
       "nav_link_text_hover_color": "#F19729",
-      "nav_menu_bg": "rgba(255,255,255,1)",
-      "nav_menu_scrolled_bg": "rgba(255,255,255,.5)",
+      "nav_menu_bg": "rgba(255,255,255,.5)",
+      "nav_menu_scrolled_bg": "#f4f4f4",
 
       "nav_mobile_menu_bg": "#dcdcdc",
 
@@ -24,9 +24,9 @@
       "body_font_size": "16px",
       "body_font_weight": "300",
 
-      "heading_font": "Google+Roboto",
+      "heading_font": "Google+Roboto+Slab",
       "heading_font_size": "36px",
-      "heading_font_weight": "800",
+      "heading_font_weight": "700",
 
       "product_compared_price_color": "#C70039",
       "slide_bg_color": "#ffffff",
@@ -125,7 +125,7 @@
       "promo_home_3_icon_name": "food-apple",
 
       "navigation_top_banner_active": false,
-      "navigation_top_banner_bg_color": "#7dc301",
+      "navigation_top_banner_bg_color": "#86B404",
       "navigation_top_banner_text_color": "#ffffff",
       "navigation_top_banner_text": "ENVÍO GRATIS EN PEDIDOS SUPERIORES A $2000",
       "navigation_top_banner_link": "#",

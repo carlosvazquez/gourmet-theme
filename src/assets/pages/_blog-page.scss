@@ -27,8 +27,8 @@
   &__item-description {
   }
   &__item-title {
-    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-    font-weight:800;
+    font-family: $heading_font;
+    font-weight: $heading_font_weight;
   }
   &__title-link {
     color: $headings_color;
