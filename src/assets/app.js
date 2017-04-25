@@ -113,7 +113,8 @@ $(document).ready(function() {
     if(body && banner.length) {
       var initPosition = 0;
       var distance = banner.offset().top - win.scrollTop();
-      var positionY = distance/4;
+      var positionY = distance/6;
+
       if(isMobile()) {
         banner.css('backgroundPosition', '0 '+ '0');
       } else {

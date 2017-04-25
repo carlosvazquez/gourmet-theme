@@ -1741,46 +1741,50 @@
           "settings": [
             {
               "type": "text",
-              "id": "home_collections_title",
+              "id": "featured_best_collections_title",
               "label": "Título de las Colecciones",
               "default": "Colecciones destacadas"
             },
             {
-              "type": "text",
-              "id": "home_collections_description",
-              "label": "Descripción de las Colecciones",
-              "default": "Estas son nuestras selecciones más destacadas."
-            },
-            {
               "type": "collection",
-              "id": "featured_collection_1",
+              "id": "featured_best_collections_1",
               "label": "Colección de productos 1",
               "default": "inicio"
             },
             {
               "type": "collection",
-              "id": "featured_collection_2",
+              "id": "featured_best_collections_2",
               "label": "Colección de productos 2"
             },
             {
               "type": "collection",
-              "id": "featured_collection_3",
+              "id": "featured_best_collections_3",
               "label": "Colección de productos 3"
             },
             {
               "type": "collection",
-              "id": "featured_collection_4",
+              "id": "featured_best_collections_4",
               "label": "Colección de productos 4"
             },
             {
               "type": "collection",
-              "id": "featured_collection_5",
+              "id": "featured_best_collections_5",
               "label": "Colección de productos 5"
             },
             {
               "type": "collection",
-              "id": "featured_collection_6",
+              "id": "featured_best_collections_6",
               "label": "Colección de productos 6"
+            },
+            {
+              "type": "collection",
+              "id": "featured_best_collections_7",
+              "label": "Colección de productos 7"
+            },
+            {
+              "type": "collection",
+              "id": "featured_best_collections_8",
+              "label": "Colección de productos 8"
             }
           ]
         }

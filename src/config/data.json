@@ -95,7 +95,7 @@
       "slide_4_btn_link": "#",
 
       "product_thumbnail_type": "square",
-      "featured_best_collections_title": "SUGERENCIAS DEL CHEF",
+
       "featured_best_products": true,
       "featured_best_products": "inicio",
       "featured_best_products_items": 8,
@@ -160,6 +160,16 @@
       "frontpage_section_6": "featured-banner-parallax-one",
       "frontpage_section_7": "featured-blog",
       "frontpage_section_8": "featured-banner-parallax-two",
+
+      "featured_best_collections_title": "SUGERENCIAS DEL CHEF",
+      "featured_best_collections_1": "inicio",
+      "featured_best_collections_2": "",
+      "featured_best_collections_3": "",
+      "featured_best_collections_4": "",
+      "featured_best_collections_5": "",
+      "featured_best_collections_6": "",
+      "featured_best_collections_7": "",
+      "featured_best_collections_8": "",
 
       "collections_description": "Descubre las delicias que tenemos",
       "category_page_title": "Categorías",
