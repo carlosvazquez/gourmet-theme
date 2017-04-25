@@ -177,6 +177,9 @@
       "collections_page_description": "Descubre lo que tenemos en cada una",
       "categories_sidebar_title": "Categorías",
       "collections_sidebar_title": "Colecciones",
+      "categories_sidebar_display": true,
+      "collections_sidebar_display": true,
+
       "footer": true,
       "footer_menu_data": "<h5 class=\"footer__section-subtitle\">Horario</h5> <ul class=\"footer__list-5\"> <li>L-J 13:00 a 23:00</li> <li>V y S 13:00 a 24:00</li> <li>D 13:00 a 23:00</li> </ul> <h5 class=\"footer__section-subtitle\">Servicios</h5> <ul class=\"footer__list-5\"> <li>Restaurante</li> <li>Plancha de Teppanyaki</li> <li>Servicio a Domicilio</li> </ul>",
       "featured_static_banner": true,

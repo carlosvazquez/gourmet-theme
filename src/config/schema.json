@@ -1958,7 +1958,7 @@
       ]
     },
     {
-      "name": "Productos",
+      "name": "Productos y Categorías",
       "icon": "product-page",
       "sections": [
         {
@@ -2042,6 +2042,33 @@
                   "label": "Cuadrada"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "header": "Sidebar",
+          "settings": [
+            {
+              "type": "text",
+              "id": "categories_sidebar_title",
+              "label": "Título categorías",
+              "default": "Categorías"
+            },
+            {
+              "type": "checkbox",
+              "id": "categories_sidebar_display",
+              "label": "Mostrar categorías"
+            },
+            {
+              "type": "text",
+              "id": "collections_sidebar_title",
+              "label": "Título colecciones",
+              "default": "Colecciones"
+            },
+            {
+              "type": "checkbox",
+              "id": "collections_sidebar_display",
+              "label": "Mostrar colecciones"
             }
           ]
         }

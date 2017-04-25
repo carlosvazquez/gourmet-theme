@@ -42,6 +42,8 @@
       opacity:1;
       top: 46%;
       position: relative;
+      color: $btn_text_color;
+      background-color: $btn_bg_color;
       -webkit-transition: all .5s ease-in-out;
       -moz-transition: all .5s ease-in-out;
       -o-transition: all .5s ease-in-out;
@@ -51,7 +53,11 @@
       -o-transition: opacity .6s ease-in-out;
       transition: opacity .6s ease-in-out;
     }
-
+    &__card:hover &__btn:hover {
+      position: relative;
+      color: $btn_text_color_hover;
+      background-color: $btn_bg_color_hover;
+    }
     &__header {
       text-align: center;
     }
