@@ -31,7 +31,8 @@
             <h2>No existen productos en esta categoría</h2>
           </div>
         {% endif %}
-      </div> <!-- .row symmetrical -->      
+      </div> <!-- .row symmetrical -->
+      {% include '_pagination.twig' %}
     </div>
   {% if sidebar %}
     {% include '_sidebar.twig' %}
