@@ -166,7 +166,7 @@ $(document).ready(function() {
   });
 
   var setCategoryMenu = function () {
-    $('.sidebar__sidebar-submenu.active').slideDown();
+    $('.sidebar__sidebar-submenu').slideUp();
   }
   
   setCategoryMenu();

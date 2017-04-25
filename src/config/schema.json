@@ -1791,167 +1791,32 @@
       ]
     },
     {
-      "name": "Página de Inicio - Instagram",
+      "name": "Página de Inicio - Blog",
       "icon": "home-page",
       "sections": [
         {
           "settings": [
             {
-              "type": "paragraph",
-              "content": "Esta configuración requiere de conocimientos avanzados, cualquier duda contacta al equipo de Shoperti"
+              "type": "blog",
+              "id": "featured_blog",
+              "label": "Seleccionar blog"
             },
             {
               "type": "text",
-              "id": "instagram_title",
+              "id": "featured_blog_title",
               "label": "Título de sección"
             },
             {
-              "type": "color",
-              "id": "instagram_title_color",
-              "label": "Color del título",
-              "default": "#ff7e11"
-            },
-            {
-              "type": "color",
-              "id": "instagram_background_color",
-              "label": "Color de fondo",
-              "default": "#ffffff"
-            },
-            {
-              "type": "text",
-              "id": "instagram_id",
-              "label": "Id de usuario"
-            },
-            {
-              "type": "text",
-              "id": "instagram_token",
-              "label": "Token de sesión"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Página de Inicio - Newsletter",
-      "icon": "home-page",
-      "sections": [
-        {
-          "settings": [
-            {
               "type": "checkbox",
-              "id": "show_newsletter",
-              "label": "Mostrar newsletter",
-              "info": "Banner de suscripción",
+              "id": "featured_blog_home_thumbnails_enabled",
+              "label": "Mostrar la imagen destacada",
               "default": true
             },
             {
               "type": "text",
-              "id": "featured_newsletter_text",
-              "label": "Título del banner"
-            },
-            {
-              "type": "color",
-              "id": "featured_newsletter_title_color",
-              "label": "Color del título",
-              "default": "#000000"
-            },
-            {
-              "type": "color",
-              "id": "featured_newsletter_background_color",
-              "label": "Color de fondo",
-              "default": "#efefef"
-            },
-            {
-              "type": "image",
-              "id": "featured_newsletter_background_img",
-              "label": "Imagen de fondo",
-              "default": "",
-              "info": "1280px de ancho recomendado"
-            },
-            {
-              "type": "checkbox",
-              "id": "featured_newsletter_text_shadow",
-              "label": "Sombra en título",
-              "default": true
-            },
-            {
-              "type": "checkbox",
-              "id": "featured_newsletter_overlay",
-              "label": "Mostrar capa oscura",
-              "default": true
-            }
-          ]
-        },
-        {
-          "header": "Newsletter Popup",
-          "settings": [
-            {
-              "type": "text",
-              "id": "newsletter_modal_title",
-              "label": "Título",
-              "default": "Entérate de todas nuestras ofertas"
-            },
-            {
-              "type": "color",
-              "id": "newsletter_modal_title_color",
-              "label": "Color del título",
-              "default": "#ffffff"
-            },
-            {
-              "type": "text",
-              "id": "newsletter_modal_description",
-              "label": "Descripción",
-              "default": "Esporádicamente te informaremos de lo más importante."
-            },
-            {
-              "type": "color",
-              "id": "newsletter_modal_description_color",
-              "label": "Color de la descripción",
-              "default": "#ffffff"
-            },
-            {
-              "type": "text",
-              "id": "newsletter_modal_btn",
-              "label": "Texto del botón",
-              "default": "Suscríbete"
-            },
-            {
-              "type": "image",
-              "id": "newsletter_modal_background_image",
-              "label": "Imagen de fondo",
-              "default": "",
-              "info": "Tamaño recomendado de 600px de ancho por 340px."
-            },
-            {
-              "type": "checkbox",
-              "id": "newsletter_modal_image_enable",
-              "label": "Mostrar imagen de fondo",
-              "default": false
-            },
-            {
-              "type": "color",
-              "id": "newsletter_modal_background_color",
-              "label": "Color de fondo",
-              "default": "#efefef"
-            }
-          ]
-        },
-        {
-          "header": "Newsletter Popup Activación",
-          "settings": [
-            {
-              "type": "checkbox",
-              "id": "newsletter_modal",
-              "label": "Activar",
-              "info": "El modal aparecerá únicamente una vez al usuario.",
-              "default": false
-            },
-            {
-              "type": "checkbox",
-              "id": "newsletter_modal_development",
-              "label": "Modo de desarrollo",
-              "info": "El modal aparecerá siempre. Si lo deja activo será molesto al usuario.",
-              "default": false
+              "id": "featured_blog_limit",
+              "label": "Cantidad de posts a mostrar",
+              "default": "4"
             }
           ]
         }

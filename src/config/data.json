@@ -170,6 +170,10 @@
       "featured_best_collections_6": "",
       "featured_best_collections_7": "",
       "featured_best_collections_8": "",
+      "featured_blog": "noticias",
+      "featured_blog_title": "Nuestro Blog",
+      "featured_blog_home_thumbnails_enabled": "true",
+      "featured_blog_limit": "4",
 
       "collections_description": "Descubre las delicias que tenemos",
       "category_page_title": "Categorías",
