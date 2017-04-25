@@ -76,3 +76,8 @@
   }
 }
 
+.no-line-dotted {
+  @media(min-width:768px) {
+    border-right: 0;
+  }
+}
