@@ -37,6 +37,7 @@
       {% else %}
         <li><span class="navigation__link second-navigation__link second-navigation--nonactive"><i class="mdi mdi-cart-outline second-navigation__icon "></i></span></li>
       {% endif %}
+        <li><a class="navigation__link second-navigation__link" href="/buscar">BUSCAR</a></li>
 
       {% if store.customer_accounts_enabled_or_optional %}
         {% if customer %}
@@ -65,9 +66,6 @@
         <li><a class="navigation__link" href="{{ link.url }}">{{ link.name }}</a></li>
         {% endif %}
       {% endfor %}
-
-
-
       {% if store.customer_accounts_enabled_or_optional %}
         {% if customer %}
           <li><a class="navigation__link visible-xs" href="/cuenta/logout">SALIR</a></li>
@@ -77,11 +75,10 @@
           <li><a class="navigation__link visible-xs" href="/cuenta/registro">REGISTRARSE</a></li>
         {% endif %}
       {% endif %}
-
       {% if cart.total_items > 0 %}
         <li><a class="navigation__link visible-xs" href="/carrito">Carrito {{ cart.total_items }}</a></li>
       {% endif %}
-
+        <li><a class="navigation__link visible-xs" href="/buscar">BUSCAR</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
