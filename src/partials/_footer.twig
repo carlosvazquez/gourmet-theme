@@ -3,7 +3,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         {% if menus[settings.footer_main_menu_name] is not empty and settings.footer_display_main_menu %}
         <div class="footer__menu footer__menu--close">
-          <h4 class="footer__section-title">NAVEGACIÓN <span class="footer__section-icon footer__section--close"><i class="mdi mdi-chevron-down"></i></span></h4>
+          <h4 class="footer__section-title">{{ settings.footer_main_menu_title }} <span class="footer__section-icon footer__section--close"><i class="mdi mdi-chevron-down"></i></span></h4>
           <ul class="footer__list-1 footer--list">
           {% for links in menus[settings.footer_main_menu_name] %}
               <li class="footer__link"><a href="{{ links.url }}" target="_blank" title="{{ links.name }}">{{ links.name }}</a></li>
@@ -15,7 +15,7 @@
       <div class="col-xs-12 col-sm-6 col-md-3">
         {% if menus[settings.footer_second_menu_name] is not empty and settings.footer_display_second_menu %}
         <div class="footer__menu footer__menu--close">
-          <h4 class="footer__section-title">MENÚ <span class="footer__section-icon footer__section--close"><i class="mdi mdi-chevron-down"></i></span></h4>
+          <h4 class="footer__section-title">{{ settings.footer_second_menu_title }} <span class="footer__section-icon footer__section--close"><i class="mdi mdi-chevron-down"></i></span></h4>
             <ul class="footer__list-2 footer--list footer--list">
             {% for links in menus[settings.footer_second_menu_name] %}
               <li class="footer__link"><a href="{{ links.url }}" target="_blank" title="{{ links.name }}">{{ links.name }}</a></li>
@@ -23,9 +23,7 @@
             </ul>
         </div>
         {% endif %}
-
         {% if settings.footer_display_social %}
-
         <div class="footer__menu footer__menu--close">
           <h4 class="footer__section-title">REDES SOCIALES <span class="footer__section-icon footer__section--close"><i class="mdi mdi-chevron-down"></i></span></h4>
           <ul class="footer__list-3 footer--list">

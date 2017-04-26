@@ -941,6 +941,12 @@
             },
             {
               "type": "text",
+              "id": "footer_main_menu_title",
+              "label": "Título del menú",
+              "default": "NAVEGACIÓN"
+            },
+            {
+              "type": "text",
               "id": "footer_main_menu_name",
               "label": "identificador del menú",
               "default": "main"
@@ -950,6 +956,12 @@
               "id": "footer_display_second_menu",
               "label": "Mostrar",
               "default": true
+            },
+            {
+              "type": "text",
+              "id": "footer_second_menu_title",
+              "label": "Título del menú",
+              "default": "MENÚ"
             },
             {
               "type": "text",
