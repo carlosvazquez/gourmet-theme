@@ -88,6 +88,24 @@
       color: $main_link_hover_color;
     }
   }
+  &__link--payment {
+    float: left;
+    display: inline-block;
+    .payment-image {
+      width: 50px;
+      max-height: 30px;
+      margin-right: 9px;
+      margin-bottom: 8px;
+    }
+    @media(max-width:767px) {
+    }
+    a {
+      color: $body_font_color;
+    }
+    a:hover {
+      color: $main_link_hover_color;
+    }
+  }
   &--list {
     margin-top: 0;
     margin-bottom: 1.6em;

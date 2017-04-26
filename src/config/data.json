@@ -183,7 +183,6 @@
       "collections_sidebar_title": "Colecciones",
       "categories_sidebar_display": true,
       "collections_sidebar_display": true,
-
       "footer": true,
       "footer_menu_data": "<h5 class=\"footer__section-subtitle\">Horario</h5> <ul class=\"footer__list-5\"> <li>L-J 13:00 a 23:00</li> <li>V y S 13:00 a 24:00</li> <li>D 13:00 a 23:00</li> </ul> <h5 class=\"footer__section-subtitle\">Servicios</h5> <ul class=\"footer__list-5\"> <li>Restaurante</li> <li>Plancha de Teppanyaki</li> <li>Servicio a Domicilio</li> </ul>",
       "featured_static_banner": true,
@@ -199,7 +198,28 @@
       "product_status_not_available_text": "AGOTADO",
       "product_thumbnail_form": "thumbnail_landscape",
       "post_thumbnail_form": "thumbnail_square",
-      "footer_display_newsletter": true
+      "footer_display_newsletter": true,
+      "footer_display_contact_data": true,
+      "footer_contact_data": "CALLE 000, COLONIA, DELEGACION/MUNICIPIO, MÉXICO, ESTADO, C.P. 00000 TELÉFONO (+52) 000 000000 - (+52) 000 000000 INFO@MIEMPRESA.COM",
+      "footer_display_payment_methods": true,
+      "footer_display_hours": true,
+      "footer_display_hours_title": "Horarios",
+      "footer_hours_data_text": "<li>L-J 13:00 a 23:00</li><li>V y S 13:00 a 24:00</li><li>D 13:00 a 23:00</li>",
+      "policy_url": "",
+      "footer_display_main_menu": true,
+      "footer_main_menu_name": "main",
+      "footer_display_second_menu": true,
+      "footer_second_menu_name": "footer",
+      "footer_display_social": true,
+      "facebook_link" : "https://www.facebook.com/ShopertiHQ",
+      "twitter_link" : "",
+      "google_link" : "",
+      "pinterest_link" : "",
+      "instagram_link" : "",
+      "youtube_link" : "",
+      "vimeo_link" : "",
+      "tumblr_link" : "",
+      "whatsapp_link" : ""
     }
   }
 }
